@@ -7,6 +7,9 @@
     "dev": "tsx watch src/server.ts",
     "build": "tsup src --out-dir build",
     "start": "node build/server.js",
+
+    "knex": "node --no-warnings --loader tsx ./node_modules/knex/bin/cli.js",
+
     "test": "vitest run",
     "test:watch": "vitest"
   },
@@ -24,6 +27,9 @@
   },
   "dependencies": {
     "dotenv": "16.1.2",
+    "fastify": "4.17.0",
+    "knex": "2.4.2",
+    "sqlite3": "5.1.6",
     "zod": "3.21.4"
   }
 }
